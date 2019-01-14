@@ -33,8 +33,8 @@
 	  name :: string(),    %% device name
 	  path :: string(),    %% device dir path
 	  id   :: string(),    %% internal node name (info)
-	  owner :: pid(),      %% owner pid
-	  mon  :: reference(), %% process monitor
+	  owner :: pid() | undefined,      %% owner pid
+	  mon  :: reference() | undefined, %% process monitor
 	  avail                %% true it device is (known to be) available
 	}).
 
