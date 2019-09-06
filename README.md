@@ -8,7 +8,7 @@
 
 
 <table width="100%" border="0" summary="list of modules">
-<tr><td><a href="http://github.com/tonyrog/uart/blob/master/doc/uart.md" class="module">uart</a></td></tr></table>
+<tr><td><a href="http://github.com/HocYachts/uart/blob/master/doc/uart.md" class="module">uart</a></td></tr></table>
 
 ### Dependencies ###
 
@@ -22,7 +22,7 @@ uart is built using rebar that can be found [here](https://github.com/rebar/reba
 
 uart also requires the following applications to be installed:
 <ul>
-<li>dthread - https://github.com/tonyrog/dthread</li>
+<li>dthread - https://github.com/HocYachts/dthread</li>
 </ul>
 
 If you use ftdi devices you can find drivers at http://ftdichip.com/.
@@ -32,7 +32,7 @@ If you use ftdi devices you can find drivers at http://ftdichip.com/.
 Clone the repository in a suitable location:
 
 ```sh
-$ git clone git://github.com/tonyrog/uart.git
+$ git clone git://github.com/HocYachts/uart.git
 ```
 ### Configurating
 #### Concepts
@@ -75,7 +75,7 @@ $ rebar ct
 ```
 #### With hardware 
 
-If you want to test with hardware you must configure the appropriate devices in [uart.cfg](http://github.com/tonyrog/uart/blob/master/test/uart.cfg) and then run:
+If you want to test with hardware you must configure the appropriate devices in [uart.cfg](http://github.com/HocYachts/uart/blob/master/test/uart.cfg) and then run:
 ```sh
 $ cd uart/test
 $ ct_run  -spec uart_hw.spec
